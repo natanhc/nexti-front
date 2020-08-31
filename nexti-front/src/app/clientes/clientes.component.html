@@ -1,0 +1,19 @@
+<p>Clientes</p>
+
+    <table>
+
+    <thead>
+        <td>ID</td>
+        <td>CPF</td>
+        <td>Nome</td>
+        <td>Data de nascimento</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of responseCliente">
+            <td>{{cliente.id}}</td>
+            <td>{{cliente.nome}}</td>
+            <td>{{cliente.cpf}}</td>
+            <td>{{cliente.dataNascimento}}</td>
+        </tr>
+    </tbody>
+</table>

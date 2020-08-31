@@ -1,0 +1,26 @@
+<h2>Fazer pedido</h2>
+
+ <div>
+    <label>
+        Cliente:
+        <input placeholder="Selecione o cliente" [(ngModel)]="request.idCliente" type="text">
+    </label>
+    <br>
+    <label>
+        Produto:
+        <input placeholder="Selecione um produto" [(ngModel)]="request.idProduto" type="text">
+    </label>
+    <br>
+    <label>
+        Data da compra:
+        <input [(ngModel)]="request.dataCompra" type="text">
+    </label>
+    <br>
+    <label>
+        Valor da compra:
+        <input [(ngModel)]="request.valorTotalCompra" type="text">
+    </label>
+    <button (click)="save()">
+        CADASTRAR
+    </button> 
+</div>

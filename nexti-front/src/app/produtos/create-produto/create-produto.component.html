@@ -1,0 +1,32 @@
+<h2>Cadastrar produto</h2>
+
+ <div>
+    <label>
+        SKU:
+        <input placeholder="Insira o código" [(ngModel)]="request.sku" type="text">
+    </label>
+    <br>
+    <label>
+        Nome:
+        <input placeholder="Qual o nome do produto?" [(ngModel)]="request.nome" type="text">
+    </label>
+    <br>
+    <label>
+        Descrição:
+        <input placeholder="Defina os detalhes da mercadoria" [(ngModel)]="request.descricao" type="text">
+    </label>
+    <br>
+    <label>
+        Preço:
+        <input placeholder="Qual o valor de venda?" [(ngModel)]="request.preco" type="text">
+    </label>
+    <br>
+    <label>
+        Estoque:
+        <input placeholder="E a quantidade em estoque?" [(ngModel)]="request.quantidade" type="text">
+    </label>
+    <br>
+    <button (click)="save()">
+        CADASTRAR
+    </button> 
+</div>

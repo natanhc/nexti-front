@@ -1,0 +1,21 @@
+<h2>Cadastrar novo cliente</h2>
+
+ <div>
+    <label>
+        Nome completo:
+        <input placeholder="Insira o código" [(ngModel)]="request.nome" type="text">
+    </label>
+    <br>
+    <label>
+        CPF:
+        <input placeholder="Qual o nome do produto?" [(ngModel)]="request.cpf" type="text">
+    </label>
+    <br>
+    <label>
+        Nascimento:
+        <input placeholder="Defina os detalhes da mercadoria" [(ngModel)]="request.dataNascimento" type="text">
+    </label>
+    <button (click)="save()">
+        CADASTRAR
+    </button> 
+</div>

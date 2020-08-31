@@ -1,0 +1,20 @@
+<p>Produtos</p>
+
+    <table>
+        <thead>
+            <td>ID</td>
+            <td>Cliente</td>
+            <td>Produto</td>
+            <td>Valor total</td>
+            <td>Data de compra</td>
+        </thead>
+        <tbody *ngFor="let pedido of responsePedido"> 
+            <tr>
+                <td>{{pedido.id}}</td>
+                <td>{{pedido.idCliente}}</td>
+                <td>{{pedido.idProduto}}</td>
+                <td>{{pedido.valorTotalCompra}}</td>
+                <td>{{pedido.dataCompra}}</td>
+            </tr>
+        </tbody>
+</table>
